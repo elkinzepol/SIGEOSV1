@@ -6,7 +6,7 @@ $url_array = explode("/", $_SERVER["REQUEST_URI"]);
 $web_dir_name = "/" . $url_array[1];
 $web_root_dir = $_SERVER['DOCUMENT_ROOT'] . $web_dir_name;
 
-date_default_timezone_set("America/Lima");
+date_default_timezone_set("America/Bogota");
 
 if (isset($_GET["url"])) {
 
