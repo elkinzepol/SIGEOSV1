@@ -7,11 +7,13 @@ if (isset($_SESSION['loggedInUser'])) {
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SIGEOS | Intelco</title>
-  <meta name="description" content="Empresa vallenata dedicada a la IMPORTACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN de productos de tecnologia y servicios.">
+  <meta name="description"
+    content="Empresa vallenata dedicada a la IMPORTACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN de productos de tecnologia y servicios.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="SIGEOS | Intelco">
   <meta property="og:site" content="SIGEOS | Intelco">
@@ -24,15 +26,22 @@ if (isset($_SESSION['loggedInUser'])) {
   <meta name="twitter:image" content="https://duolabgroup.com/duolab/img/duolabgroup_logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <!--<meta name="twitter:site" content="@duolabgroup">-->
-  
+
   <meta name="theme-color" content="#e9ecef">
   <meta name="author" content="Elkin López">
-  
-  <link rel="icon" href="./img/favicons/chemistry-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="./img/favicons/chemistry-16x16.png" sizes="16x16" type="image/png">
-  
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- icheck bootstrap -->
@@ -42,36 +51,39 @@ if (isset($_SESSION['loggedInUser'])) {
   <!-- AdminLTE Template Style -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
-  <!-- /.login-logo -->
-  <div class="card card-outline card-primary">
-    <div class="card-header text-center">
-      <!-- <a href="#" class="h1"><b>DuoLab </b>Group</a> -->
-      <img class="mb-0" src="./img/duolabgroup_logo_alt.png" width="225" height="225">
-    </div>
-    <div class="card-body">
-      <p class="login-box-msg">Ingrese sus credenciales para acceder</p>
 
-      <form id="login-form">
-        <div class="input-group mb-3">
-          <input type="text" name="txtUsername" pattern="[A-Za-z0-9_-]{1,50}" maxlength="50" class="form-control" placeholder="Usuario" required="" autofocus="" autocomplete="username">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-user"></span>
+<body class="hold-transition login-page">
+  <div class="login-box">
+    <!-- /.login-logo -->
+    <div class="card card-outline card-primary">
+      <div class="card-header text-center">
+        <!-- <a href="#" class="h1"><b>DuoLab </b>Group</a> -->
+        <img class="mb-0" src="./img/duolabgroup_logo_alt.png" width="225" height="225">
+      </div>
+      <div class="card-body">
+        <p class="login-box-msg">Ingrese sus credenciales para acceder</p>
+
+        <form id="login-form">
+          <div class="input-group mb-3">
+            <input type="text" name="txtUsername" pattern="[A-Za-z0-9_-]{1,50}" maxlength="50" class="form-control"
+              placeholder="Usuario" required="" autofocus="" autocomplete="username">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" name="txtPassword" pattern="[A-Za-z0-9_-]{1,72}" maxlength="72" class="form-control" placeholder="Contraseña" required="" autocomplete="current-password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
+          <div class="input-group mb-3">
+            <input type="password" name="txtPassword" pattern="[A-Za-z0-9_-]{1,72}" maxlength="72" class="form-control"
+              placeholder="Contraseña" required="" autocomplete="current-password">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <!-- <div class="col-8">
+          <div class="row">
+            <!-- <div class="col-8">
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
@@ -79,55 +91,58 @@ if (isset($_SESSION['loggedInUser'])) {
               </label>
             </div>
           </div> -->
-          <!-- /.col -->
-          <div class="col-12">
-            <button type="submit" id="btnLogin" class="btn btn-primary btn-block">Ingresar</button>
+            <!-- /.col -->
+            <div class="col-12">
+              <button type="submit" id="btnLogin" class="btn btn-primary btn-block">Ingresar</button>
+            </div>
+            <!-- /.col -->
           </div>
-          <!-- /.col -->
-        </div>
-      </form>
-      <!--
+        </form>
+        <!--
       <p class="mb-1">
         <a href="forgot-password.html">I forgot my password</a>
       </p>
       -->
-      <p class="mt-5 mb-3 text-muted text-center">© 2024 SIGEOS | Intelco</p>
+        <p class="mt-5 mb-3 text-muted text-center">© 2024 SIGEOS | Intelco</p>
+      </div>
+      <!-- /.card-body -->
     </div>
-    <!-- /.card-body -->
+    <!-- /.card -->
   </div>
-  <!-- /.card -->
-</div>
-<!-- /.login-box -->
+  <!-- /.login-box -->
 
-<!-- jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-<!-- Toastr -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
-<!-- AdminLTE App -->
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <!-- Toastr -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 
-<script type="text/javascript">
-  toastr.options = {
-    "closeButton": false,
-    "debug": false,
-    "newestOnTop": false,
-    "progressBar": false,
-    "positionClass": "toast-top-center",
-    "preventDuplicates": true,
-    "onclick": null,
-    "showDuration": "500",
-    "hideDuration": "1000",
-    "timeOut": "5000",
-    "extendedTimeOut": "1000",
-    "showEasing": "swing",
-    "hideEasing": "linear",
-    "showMethod": "fadeIn",
-    "hideMethod": "fadeOut"
+  <script type="text/javascript">
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-top-center",
+      "preventDuplicates": true,
+      "onclick": null,
+      "showDuration": "500",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
     }
-</script>
-<script src="./ajax/login.js"></script>
+  </script>
+  <script src="./ajax/login.js"></script>
 
 </body>
+
 </html>

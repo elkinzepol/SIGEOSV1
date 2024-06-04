@@ -5,7 +5,7 @@
     <a href="<?php echo $functions->direct_paginas()."home" ?>" class="brand-link">
       <img src="<?php echo $functions->direct_sistema(); ?>/img/chemistry.png" alt="DuoLab Group Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-dark text-cyan"><strong>DUOLAB</strong> GROUP</span>
+      <span class="brand-text font-weight-dark text-cyan"><strong>SIGEOS | </strong>Intelco</span>
     </a>
 
     <!-- Sidebar -->
