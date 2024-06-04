@@ -4,8 +4,8 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 
 	require '../global/connection.php';
 
-	$usuario_usuario = $_POST['txtUsername'];
-	$usuario_clave = $_POST['txtPassword'];
+	$username = $_POST['txtUsername'];
+	$password = $_POST['txtPassword'];
 
 	$sqlStatement = $pdo->prepare("SELECT u.id AS USERID, u.username AS USERNAME,
 		u.password AS PASS, u.photo_url AS PHOTO_URL, e.job AS JOB,
