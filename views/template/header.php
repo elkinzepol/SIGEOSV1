@@ -42,11 +42,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/css/adminlte.min.css">
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $functions->direct_sistema(); ?>/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $functions->direct_sistema(); ?>/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $functions->direct_sistema(); ?>/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="76x76"
+    href="<?php echo $functions->direct_sistema(); ?>/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="<?php echo $functions->direct_sistema(); ?>/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="<?php echo $functions->direct_sistema(); ?>/img/favicons/favicon-16x16.png">
   <link rel="manifest" href="<?php echo $functions->direct_sistema(); ?>/img/favicons/site.webmanifest">
-  <link rel="mask-icon" href="<?php echo $functions->direct_sistema(); ?>/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="<?php echo $functions->direct_sistema(); ?>/img/favicons/safari-pinned-tab.svg"
+    color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
@@ -54,7 +58,11 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
-
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+      <img class="animation__shake" src="<?php echo $functions->direct_sistema(); ?>/img/chemistry.png"
+        alt="AdminLTELogo" height="60" width="60">
+    </div>
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-dark">
 
@@ -69,10 +77,12 @@
           <a href="<?php echo $functions->direct_paginas() . "home" ?>" class="nav-link">Inicio</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "clientes/registro-cliente" ?>" class="nav-link">Clientes</a>
+          <a href="<?php echo $functions->direct_paginas() . "clientes/registro-cliente" ?>"
+            class="nav-link">Clientes</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "productos/listado-producto" ?>" class="nav-link">Listado de
+          <a href="<?php echo $functions->direct_paginas() . "productos/listado-producto" ?>" class="nav-link">Listado
+            de
             Productos</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
@@ -80,10 +90,12 @@
             class="nav-link">Factura</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "facturacion/registro-boleta" ?>" class="nav-link">Boleta</a>
+          <a href="<?php echo $functions->direct_paginas() . "facturacion/registro-boleta" ?>"
+            class="nav-link">Boleta</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "facturacion/registro-nota-credito" ?>" class="nav-link">Nota
+          <a href="<?php echo $functions->direct_paginas() . "facturacion/registro-nota-credito" ?>"
+            class="nav-link">Nota
             de Crédito</a>
         </li>
 
