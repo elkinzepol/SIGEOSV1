@@ -5,7 +5,7 @@
       
     </div>
     <!-- Default to the left -->
-    <strong>&copy; 2023 DuoLab Group</strong>
+    <strong>&copy; 2024 Elkin Lopez</strong>
   </footer>
 </div>
 <!-- ./wrapper -->
