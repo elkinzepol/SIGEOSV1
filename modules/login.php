@@ -1,6 +1,6 @@
 <?php
 
-if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 
 	require '../global/connection.php';
 
@@ -13,28 +13,28 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 		FROM tbl_user u JOIN tbl_employee e ON u.employee_id=e.id
 		WHERE u.username=:username");
 
-	$sqlStatement->bindParam("username",$username,PDO::PARAM_STR);
+	$sqlStatement->bindParam("username", $username, PDO::PARAM_STR);
 	$sqlStatement->execute();
 
-	$rowsNumber=$sqlStatement->rowCount();
+	$rowsNumber = $sqlStatement->rowCount();
 
-	if ($rowsNumber==1) {
+	if ($rowsNumber == 1) {
 
-		$sqlData=$sqlStatement->fetch(PDO::FETCH_ASSOC);
+		$sqlData = $sqlStatement->fetch(PDO::FETCH_ASSOC);
 
 		if (password_verify($password, $sqlData['PASS'])) {
 
 			$sqlData['PASS'] = "";
 
-			if ($sqlData['PHOTO_URL'] == ""){
+			if ($sqlData['PHOTO_URL'] == "") {
 				$sqlData['PHOTO_URL'] = "default-avatar.png";
 			}
 
 			session_start();
-			$_SESSION['loggedInUser']=$sqlData;
+			$_SESSION['loggedInUser'] = $sqlData;
 
 			echo json_encode(array('error' => false));
-		
+
 		} else {
 			echo json_encode(array('error' => true));
 		}

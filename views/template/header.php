@@ -68,41 +68,43 @@
 
       <!-- Left navbar links -->
       <ul class="navbar-nav">
-
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
-
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "home" ?>" class="nav-link">Inicio</a>
+          <a href="index3.html" class="nav-link">Inicio</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "clientes/registro-cliente" ?>"
-            class="nav-link">Clientes</a>
+          <a href="#" class="nav-link">Clientes</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "productos/listado-producto" ?>" class="nav-link">Listado
-            de
-            Productos</a>
+          <a href="#" class="nav-link">O.S.</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "facturacion/registro-factura" ?>"
-            class="nav-link">Factura</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "facturacion/registro-boleta" ?>"
-            class="nav-link">Boleta</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="<?php echo $functions->direct_paginas() . "facturacion/registro-nota-credito" ?>"
-            class="nav-link">Nota
-            de Crédito</a>
-        </li>
-
       </ul>
 
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
 
         <!-- Dropdown User Menu -->
         <li class="nav-item dropdown user-menu">
@@ -129,7 +131,8 @@
                   -->
                   </h3>
                   <p class="text-sm"><i
-                      class="fa-solid fa-user mr-1"></i><?php echo ($_SESSION['loggedInUser']['USERNAME']); ?></p>
+                      class="fa-solid fa-user mr-1"></i><?php echo ($_SESSION['loggedInUser']['USERNAME']); ?>
+                  </p>
                   <p class="text-sm"><?php echo strtoupper($_SESSION['loggedInUser']['JOB']); ?></p>
                 </div>
               </div>
